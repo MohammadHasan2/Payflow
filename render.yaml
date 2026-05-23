@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: payflow-backend
+    runtime: docker
+    dockerfile: ./Dockerfile
+    region: oregon
+    plan: free
+    envVars:
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: DOMAIN
+        value: https://payflow-backend.onrender.com
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+      - key: ALGORITHM
+        value: HS256
