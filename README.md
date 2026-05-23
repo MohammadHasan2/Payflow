@@ -44,17 +44,4 @@ Server runs at `http://localhost:8000`
 docker-compose up
 ```
 
-## Deployment
-
-Deploy on Render:
-1. Connect your GitHub repo
-2. Add environment variables in Render dashboard
-3. Deploy
-
-## API Endpoints
-
-- `GET /` - Health check
-- `POST /merchants` - Create merchant
-- `POST /payments` - Create payment
-
 See `app/routes/` for full API documentation.
